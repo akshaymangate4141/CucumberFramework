@@ -1,12 +1,15 @@
 package com.ui.stepDefinations;
 
+import com.utils.TestUtil;
 import io.cucumber.java.en.*;
+
+import java.io.IOException;
 
 public class LoginPageStepDef {
 
     @Given("user is on login page")
-    public void user_is_on_login_page() {
-        DriverFactory.getDriver().get("http://phoenix.techwithjatin.com/sign-in");
+    public void user_is_on_login_page(){
+        DriverFactory.getDriver().get(TestUtil.getValueFromPropertiesFile("BASE_URL"));
     }
 
     @Given("user enters login cred and sign in")

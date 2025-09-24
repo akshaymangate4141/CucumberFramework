@@ -8,7 +8,7 @@ public class CucumberHooks {
 WebDriver driver;
     @Before
     public void initializeDriver(){
-        DriverFactory.setUpDriver();
+        DriverFactory.setUpDriver("chrome");
         driver=DriverFactory.getDriver();
        driver.manage().window().maximize();
 
