@@ -1,5 +1,6 @@
 package com.ui.stepDefinations;
 
+import com.constant.ConfigKey;
 import com.utils.TestUtil;
 import io.cucumber.java.en.*;
 
@@ -9,7 +10,7 @@ public class LoginPageStepDef {
 
     @Given("user is on login page")
     public void user_is_on_login_page(){
-        DriverFactory.getDriver().get(TestUtil.getValueFromPropertiesFile("BASE_URL"));
+        DriverFactory.getDriver().get(TestUtil.getValueFromPropertiesFile(ConfigKey.BASE_URL));
     }
 
     @Given("user enters login cred and sign in")

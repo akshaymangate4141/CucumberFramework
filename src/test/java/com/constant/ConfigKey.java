@@ -1,0 +1,5 @@
+package com.constant;
+
+public enum ConfigKey {
+    BASE_URL,PASSWORD,FD_USER,SUP_USER,QA_USER,ENG_USER,BS_URL,BS_USERNAME,BS_ACCESS_KEY,BROWSER
+}
