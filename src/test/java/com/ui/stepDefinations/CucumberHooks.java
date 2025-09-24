@@ -17,7 +17,7 @@ WebDriver driver;
     }
     @After
     public void quitDriver(){
-        DriverFactory.tearDownDriver();
+//        DriverFactory.tearDownDriver();
     }
 
 }

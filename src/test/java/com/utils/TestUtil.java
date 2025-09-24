@@ -11,7 +11,7 @@ public class TestUtil {
     public static String getValueFromPropertiesFile(ConfigKey key) {
         try {
             Properties p = new Properties();
-            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "src/test/resources/configFiles/qaConfig.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/configFiles/qaConfig.properties");
             p.load(fis);
             return p.getProperty(key.toString());
         } catch (Exception e) {
