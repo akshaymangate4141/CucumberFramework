@@ -5,8 +5,6 @@ import com.ui.pages.DashboardPage;
 import com.utils.TestUtil;
 import io.cucumber.java.en.*;
 
-import java.io.IOException;
-
 public class LoginPageStepDef {
 
     private DashboardPage dp;
