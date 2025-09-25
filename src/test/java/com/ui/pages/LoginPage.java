@@ -21,6 +21,7 @@ public final class LoginPage extends BrowserUtil {
 
     public LoginPage(WebDriver driver){
         super(driver);
+        this.driver=driver;
         PageFactory.initElements(driver,this);
     }
 

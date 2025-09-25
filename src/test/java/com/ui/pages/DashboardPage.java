@@ -12,6 +12,7 @@ public final class DashboardPage extends BrowserUtil {
 
     public DashboardPage(WebDriver driver){
         super(driver);
+
         PageFactory.initElements(driver,this);
     }
 

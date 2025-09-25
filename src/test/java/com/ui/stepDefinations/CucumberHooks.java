@@ -7,17 +7,19 @@ import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 
 public class CucumberHooks {
-WebDriver driver;
+    WebDriver driver;
+
     @Before
-    public void initializeDriver(){
+    public void initializeDriver() {
         DriverFactory.setUpDriver(TestUtil.getValueFromPropertiesFile(ConfigKey.BROWSER));
-        driver=DriverFactory.getDriver();
-       driver.manage().window().maximize();
+        driver = DriverFactory.getDriver();
+        driver.manage().window().maximize();
 
     }
+
     @After
-    public void quitDriver(){
-//        DriverFactory.tearDownDriver();
+    public void quitDriver() {
+      DriverFactory.tearDownDriver();
     }
 
 }
